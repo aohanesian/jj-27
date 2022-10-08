@@ -1,7 +1,7 @@
 `use strict`;
 
 function reverseString(str) {
-    return str.split('').reverse().join('');
+    return Number(str.toString().split('').reverse().join(''));
 }
 
 function isPalindrome(str) {
@@ -13,4 +13,4 @@ function operation(str, step = 0) {
     return operation(str + reverseString(str), ++step);
 }
 
-console.log(operation(`96`, 0));
+console.log(operation(96));
